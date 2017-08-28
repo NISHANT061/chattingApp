@@ -1,0 +1,813 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="watsapp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link  href="http://code.jquery.com/ui/1.10.3/themessmoothness/jquery-ui.css">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="watsappweb.js"></script>
+	
+
+</head>
+<body>
+<div class="mask2">
+</div>
+<div class="left-wrapper">
+<div class="left1">
+  <div class="left-pane-top">
+  	<div class="left-pane-top-left">
+  	<img id="img1" src="asd.jpg" class="img-circle" alt="Image">
+  	</div>
+  	<div class="left-pane-top-right pull-right">
+  	<i  style="font-size:25px;color:gray; cursor: pointer;" class="fa fa-comments " aria-hidden="true"></i>
+  	<div class="dropdown" style="display:inline-block;">
+  	<i  class="fa fa-ellipsis-v dropdown-toggle" data-toggle="dropdown" style="font-size:24px;cursor: pointer;color:gray"></i>
+  	<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">New group</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profile</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Archieved</a></li> 
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Starred</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Log out</a></li>     
+    </ul>
+  	</div>
+  	</div>
+  </div>
+  <div class="search-bar">
+  
+       <div class="searchbox">
+      <i class="fa fa-search" aria-hidden="true"></i> 
+      <p> Search or start new chat</p>
+       </div>
+       <div class="inp" style="display: none;">
+       <i class="fa fa-arrow-left search_arrow" aria-hidden="true"></i>
+       <input type="text" name="">
+       </div>
+   
+      
+  </div>
+  <div class="chat-body" >
+  <div id="c1b" class="chat" data-counter="0">
+  <div class="chatimg">
+   <img src="DSC_0086.jpg" class="img-circle chatdp" alt="Image">
+   </div>
+   <div class="chatname">
+        <h5>Baba</h5>
+        <span class="fa-stack fa-lg text-default" style="color:gray;">
+    <i class="fa fa-check fa-stack-1x" style="margin-left:4px"></i>
+    <i class="fa fa-check fa-inverse fa-stack-1x" style="margin-left:-3px;"></i>
+    <i class="fa fa-check  fa-stack-1x" style="margin-left:-4px"></i> 
+</span>
+   <p> hello baba</p>
+   </div>
+   <div style="padding-top:10px;display: none;" class=" chevron pull-right dropdown">
+   <i  style="color: gray;" class="fa fa-chevron-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Archive chat</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mute</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pin chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mark as unread</a></li>   
+    </ul>
+   </div>
+  
+     </div>
+      <div id="c1r" class="chat" data-counter="0">
+      <div class="chatimg">
+       <img src="DSC_0187.jpg" class="img-circle chatdp" alt="Image">
+         </div>
+         <div class="chatname">
+          <h5>Rishabh</h5>
+             <span class="fa-stack fa-lg text-default" style="color:gray;">
+              <i class="fa fa-check fa-stack-1x" style="margin-left:4px"></i>
+              <i class="fa fa-check fa-inverse fa-stack-1x" style="margin-left:-3px;"></i>
+              <i class="fa fa-check  fa-stack-1x" style="margin-left:-4px"></i> 
+             </span>
+             <p> hello Rishabh</p>
+             </div>
+             <div style="padding-top:10px;display: none;" class=" chevron pull-right dropdown">
+   <i  style="color: gray;" class="fa fa-chevron-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Archive chat</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mute</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pin chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mark as unread</a></li>   
+    </ul>
+   </div>
+           </div>
+     <div class="chat">
+      <div class="chatimg">
+       <img src="DSC_0086.jpg" class="img-circle chatdp" alt="Image">
+        </div>
+        <div class="chatname">
+        <h5>Baba</h5>
+        <span class="fa-stack fa-lg text-default" style="color:gray;">
+             <i class="fa fa-check fa-stack-1x" style="margin-left:4px"></i>
+               <i class="fa fa-check fa-inverse fa-stack-1x" style="margin-left:-3px;"></i>
+                 <i class="fa fa-check  fa-stack-1x" style="margin-left:-4px"></i> 
+                     </span>
+                     <p> hello baba</p>
+            </div>
+             <div style="padding-top:10px;display: none;" class=" chevron pull-right dropdown">
+   <i  style="color: gray;" class="fa fa-chevron-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Archive chat</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mute</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pin chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mark as unread</a></li>   
+    </ul>
+   </div>
+      </div>
+       <div class="chat">
+  <div class="chatimg">
+   <img src="DSC_0086.jpg" class="img-circle chatdp" alt="Image">
+   </div>
+   <div class="chatname">
+        <h5>Baba</h5>
+        <span class="fa-stack fa-lg text-default" style="color:gray;">
+    <i class="fa fa-check fa-stack-1x" style="margin-left:4px"></i>
+    <i class="fa fa-check fa-inverse fa-stack-1x" style="margin-left:-3px;"></i>
+    <i class="fa fa-check  fa-stack-1x" style="margin-left:-4px"></i> 
+</span>
+<p> hello baba</p>
+</div>
+             <div style="padding-top:10px;display: none;" class=" chevron pull-right dropdown">
+   <i  style="color: gray;" class="fa fa-chevron-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Archive chat</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mute</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pin chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mark as unread</a></li>   
+    </ul>
+   </div>
+  </div>  
+   <div class="chat">
+  <div class="chatimg">
+   <img src="DSC_0086.jpg" class="img-circle chatdp" alt="Image">
+   </div>
+   <div class="chatname">
+        <h5>Baba</h5>
+        <span class="fa-stack fa-lg text-default" style="color:gray;">
+    <i class="fa fa-check fa-stack-1x" style="margin-left:4px"></i>
+    <i class="fa fa-check fa-inverse fa-stack-1x" style="margin-left:-3px;"></i>
+    <i class="fa fa-check  fa-stack-1x" style="margin-left:-4px"></i> 
+</span>
+<p> hello baba</p>
+  </div>
+             <div style="padding-top:10px;display: none;" class=" chevron pull-right dropdown">
+   <i  style="color: gray;" class="fa fa-chevron-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Archive chat</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mute</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pin chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mark as unread</a></li>   
+    </ul>
+   </div>
+  </div>
+     <div class="chat">
+  <div class="chatimg">
+   <img src="DSC_0086.jpg" class="img-circle chatdp" alt="Image">
+   </div>
+   <div class="chatname">
+        <h5>Baba</h5>
+        <span class="fa-stack fa-lg text-default" style="color:gray;">
+          <i class="fa fa-check fa-stack-1x" style="margin-left:4px"></i>
+              <i class="fa fa-check fa-inverse fa-stack-1x" style="margin-left:-3px;"></i>
+            <i class="fa fa-check  fa-stack-1x" style="margin-left:-4px"></i> 
+       </span>
+       <p> hello baba</p>
+</div>
+             <div style="padding-top:10px;display: none;" class=" chevron pull-right dropdown">
+   <i  style="color: gray;" class="fa fa-chevron-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Archive chat</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mute</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pin chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mark as unread</a></li>   
+    </ul>
+   </div>
+  </div>
+       <div class="chat">
+        <div class="chatimg">
+              <img src="DSC_0086.jpg" class="img-circle chatdp" alt="Image">
+         </div>
+           <div class="chatname">
+          <h5>Baba</h5>
+          <span class="fa-stack fa-lg text-default" style="color:gray;">
+           <i class="fa fa-check fa-stack-1x" style="margin-left:4px"></i>
+          <i class="fa fa-check fa-inverse fa-stack-1x" style="margin-left:-3px;"></i>
+            <i class="fa fa-check  fa-stack-1x" style="margin-left:-4px"></i> 
+         </span>
+         <p> hello baba</p>
+     </div>
+              <div style="padding-top:10px;display: none;" class=" chevron pull-right dropdown">
+     <i  style="color: gray;" class="fa fa-chevron-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Archive chat</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mute</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pin chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mark as unread</a></li>   
+      </ul>
+      </div>
+         </div>
+     <div class="chat">
+     <div class="chatimg">
+      <img src="DSC_0086.jpg" class="img-circle chatdp" alt="Image">
+      </div>
+      <div class="chatname">
+        <h5>Baba</h5>
+        <span class="fa-stack fa-lg text-default" style="color:gray;">
+    <i class="fa fa-check fa-stack-1x" style="margin-left:4px"></i>
+    <i class="fa fa-check fa-inverse fa-stack-1x" style="margin-left:-3px;"></i>
+    <i class="fa fa-check  fa-stack-1x" style="margin-left:-4px"></i> 
+    </span>
+    <p> hello baba</p>
+    </div>
+             <div style="padding-top:10px;display: none;" class=" chevron pull-right dropdown">
+      <i  style="color: gray;" class="fa fa-chevron-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Archive chat</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mute</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pin chat</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mark as unread</a></li>   
+      </ul>
+      </div>
+     </div>
+      <div class="chat">
+       <div class="chatimg">
+       <img src="DSC_0086.jpg" class="img-circle chatdp" alt="Image">
+      </div>
+       <div class="chatname">
+        <h5>Baba</h5>
+        <span class="fa-stack fa-lg text-default" style="color:gray;">
+        <i class="fa fa-check fa-stack-1x" style="margin-left:4px"></i>
+        <i class="fa fa-check fa-inverse fa-stack-1x" style="margin-left:-3px;"></i>
+       <i class="fa fa-check  fa-stack-1x" style="margin-left:-4px"></i> 
+      </span>
+      <p> hello baba</p>
+       </div>
+             <div style="padding-top:10px;display: none;" class=" chevron pull-right dropdown">
+            <i  style="color: gray;" class="fa fa-chevron-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Archive chat</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mute</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete chat</a></li>   
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pin chat</a></li>   
+         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mark as unread</a></li>   
+        </ul>
+       </div>
+        </div>
+         <div class="chat">
+           <div class="chatimg">
+            <img src="DSC_0086.jpg" class="img-circle chatdp" alt="Image">
+         </div>
+          <div class="chatname">
+          <h5>Baba</h5>
+         <span class="fa-stack fa-lg text-default" style="color:gray;">
+         <i class="fa fa-check fa-stack-1x" style="margin-left:4px"></i>
+         <i class="fa fa-check fa-inverse fa-stack-1x" style="margin-left:-3px;"></i>
+         <i class="fa fa-check  fa-stack-1x" style="margin-left:-4px"></i> 
+          </span> 
+          <p> hello baba</p>
+          </div>
+             <div style="padding-top:10px;display: none;" class=" chevron pull-right dropdown">
+        <i  id="dp1" style="color: gray;" class="fa fa-chevron-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Archive chat</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mute</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete chat</a></li>   
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pin chat</a></li>   
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mark as unread</a></li>   
+       </ul>
+       </div>
+      </div>
+  </div>
+  </div>
+   <div class="left2">
+  <div class="l2-left-top">
+ <i id="arrowback" class="fa fa-arrow-left" aria-hidden="true"></i>
+ <p> Profile</p>
+ </div>
+ <div class="l2-left-img">
+ 
+      <img id="imgl2" src="asd.jpg" class="img-circle" alt="Image">
+ </div>
+<div class="name">
+  <h5 style="color:#87CEFA"> YOUR NAME </h5>
+  <h4> NISHANT SINGH</h4>
+ </div>
+ <div class="info">
+ <p style="color:#d3d3d3;font-size: 14px;">This is not your user name or pin.This name will be visible to your watsapp contacts.</p>
+ </div>
+ <div id=""status" class="name">
+  <h5 style="color:#87CEFA"> ABOUT </h5>
+  <h4> Labour reaps Reward</h4>
+ </div>
+  </div>
+  <div class="left3">
+  <div class="l2-left-top">
+ <i id="arrowback" class="fa fa-arrow-left" aria-hidden="true"></i>
+ <p> New Chat</p>
+ </div>
+ <div class="search-bar">
+  
+       <div class="searchbox">
+      <i class="fa fa-search" aria-hidden="true"></i> 
+      <p> Search or start new chat</p>
+      
+       </div>
+       <div class="inp" style="display: none;">
+       <i id="al" class="fa fa-arrow-left" aria-hidden="true"></i>
+       <input type="text" name="">
+       </div>
+   
+      
+  </div>
+  <div class="contacts">
+  <div class="contactB">
+  <h4>B</h4>
+  <img src="DSC_0086.jpg" class="img-circle" alt="Image" style="display: inline-block;">
+<div style="display: inline-block;margin-left:11px;width:78.5%">
+  <h5>Baba</h5>
+  <hr>
+  </div>
+  </div>
+  <div class="contactB">
+  <h4>B</h4>
+  <img src="DSC_0086.jpg" class="img-circle" alt="Image" style="display: inline-block;">
+<div style="display: inline-block;margin-left:11px;width:78.5%">
+  <h5>Baba</h5>
+  <hr>
+  </div>
+  </div>
+  <div class="contactB">
+  <h4>B</h4>
+  <img src="DSC_0086.jpg" class="img-circle" alt="Image" style="display: inline-block;">
+<div style="display: inline-block;margin-left:11px;width:78.5%">
+  <h5>Baba</h5>
+  <hr>
+  </div>
+  </div>
+  <div class="contactB">
+  <h4>B</h4>
+  <img src="DSC_0086.jpg" class="img-circle" alt="Image" style="display: inline-block;">
+<div style="display: inline-block;margin-left:11px;width:78.5%">
+  <h5>Baba</h5>
+  <hr>
+  </div>
+  </div>
+  <div class="contactB">
+  <h4>B</h4>
+  <img src="DSC_0086.jpg" class="img-circle" alt="Image" style="display: inline-block;">
+<div style="display: inline-block;margin-left:11px;width:78.5%">
+  <h5>Baba</h5>
+  <hr>
+  </div>
+  </div>
+  <div class="contactB">
+  <h4>B</h4>
+  <img src="DSC_0086.jpg" class="img-circle" alt="Image" style="display: inline-block;">
+<div style="display: inline-block;margin-left:11px;width:78.5%">
+  <h5>Baba</h5>
+  <hr>
+  </div>
+  </div>
+  <div class="contactB">
+  <h4>B</h4>
+  <img src="DSC_0086.jpg" class="img-circle" alt="Image" style="display: inline-block;">
+<div style="display: inline-block;margin-left:11px;width:78.5%">
+  <h5>Baba</h5>
+  <hr>
+  </div>
+  </div>
+  <div class="contactB">
+  <h4>B</h4>
+  <img src="DSC_0086.jpg" class="img-circle" alt="Image" style="display: inline-block;">
+<div style="display: inline-block;margin-left:11px;width:78.5%">
+  <h5>Baba</h5>
+  <hr>
+  </div>
+  </div>
+  <div class="contactB">
+  <h4>B</h4>
+  <img src="DSC_0086.jpg" class="img-circle" alt="Image" style="display: inline-block;">
+<div style="display: inline-block;margin-left:11px;width:78.5%">
+  <h5>Baba</h5>
+  <hr>
+  </div>
+  </div>
+
+
+  </div>
+  </div>
+</div>
+<div class="right-wrapper">
+  <div class="welcome">
+  	<div class="welcomeimg">
+  	<img id="welimg" src="webwatsapp-base.jpg" class="img-circle" alt="Image">
+  	</div>
+  	<div class="connected">
+  	<h2 style="color:gray;padding-left: 40px;"> Keep ur phone connected </h2>
+  	<small style="color:gray;font-size: 14px;">Whatsapp connects to your phone to sync messages. to reduce data 
+  	<span style="padding-left: 100px;">usage,connect your phone to Wi-Fi.</span></small>
+  	<hr>
+  	<i style="color:gray;padding-left:90px" class="fa fa-laptop" aria-hidden="true"></i> <p style="color:gray"> Whatsapp is available for Windows. <a style="color:green;text-decoration: none" href=""> Get it here</a></p>
+  	</div>
+  	</div>
+    <div class="chat-baba">
+    <div class="chat-baba-top">
+    <div style="display: inline-block;" class="chat-img">
+    <img src="DSC_0086.jpg" class="img-circle contacti" alt="Image">
+    <h4 style="display: inline-block;padding-top: 0;padding-left: 3px;">Baba</h4>
+    </div>
+    <div  style="display: inline-block; padding-top: 15px;" class="right-items pull-right">
+     <i  style="color: gray;font-size: 24px;padding-right: 20px;cursor: pointer;"  class="fa fa-search tl" aria-hidden="true"></i>
+    <!-- <i style="color: gray;font-size: 24px;padding-right: 20px; cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i> -->
+     <div class="dropdown" style="display:inline-block;">
+ <i  class="fa fa-paperclip dropdown-toggle" data-toggle="dropdown" style="font-size:24px;cursor: pointer;color:gray;padding-right: 20px;" aria-hidden="true"></i>
+    <ul class="dropdown-menu gal_dropdown" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-picture-o upload" style="font-size: 32px" aria-hidden="true"></i></a></li>
+      <input id="file_upload" type="file" style="display: none;">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-camera upload"  style="font-size:32px" aria-hidden="true"></i></a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-file upload" style="font-size:32px" aria-hidden="true"></i></a></li> 
+   <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-address-book upload"  style="font-size: 32px" aria-hidden="true"></i></a></li>   
+       
+    </ul>
+    </div>
+
+      <div class="dropdown" style="display:inline-block;">
+     <i class="fa fa-ellipsis-v dropdown-toggle happy " data-toggle="dropdown"  style="color: gray;font-size: 24px;cursor: pointer;padding-right: 20px;"></i>
+ <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact info</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Select Messages</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mute</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Clear Messages</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete chat</a></li>   
+    </ul>
+</div>
+
+    </div>
+    <div class="clearfix">
+    </div>
+    </div>
+    <div class="chatb">
+    <div class="chatlogs">
+   <div class="chatm self">
+   <p class="chat-message">Pranamm baba <br><time style="color: gray;float: right">10.00</time></p>
+
+   </div>
+   <br>
+   <div class="chatm friend">
+   <p class="chat-message">khush rho pota<br><time style="color: gray;float: right">10.01</time></p>
+   </div>
+   <br>
+   <div class="chatm self">
+   <p class="chat-message">Kaise hain<br><time style="color: gray;float: right">10.03</time></p>
+   </div>
+   <br>
+   <div class="chatm friend">
+   <p class="chat-message">thk hain, tm sunao..?<br><time style="color: gray;float: right">10.05</time></p>
+   </div>
+   <br>
+   <div class="chatm self">
+   <p class="chat-message">Hm v thk hain<br><time style="color: gray;float: right">10.10</time></p>
+   </div>
+   <br>
+   <div class="chatm friend">
+   <p class="chat-message">Aur kya ho rha h<br><time style="color: gray;float: right">10.12</time></p>
+   </div>
+   <br>
+   <div class="chatm self">
+   <p class="chat-message">Just chiling...App kya kr rhe??<br><time style="color: gray;float: right">10.14</time></p>
+   </div>
+   <br>
+   <div class="chatm friend">
+   <p class="chat-message">Kch v nai..baithe h<br><time style="color: gray;float: right">10.15</time></p>
+   </div>
+   <br>
+   <div class="chatm self">
+   <p class="chat-message">Accha..How is ur health<br><time style="color: gray;float: right">10.20</time></p>
+   </div>
+   <br>
+   <div class="chatm friend">
+   <p class="chat-message">Ab to bht thk h<br><time style="color: gray;float: right">10.23</time></p>
+   </div>
+   <br>
+   <div class="chatm self">
+   <p class="chat-message">Jldi thk ho jaiyega<br><time style="color: gray;float: right">10.30</time></p>
+   </div>
+   <br>
+    </div>
+    </div>
+    
+    <div class="chattext">
+    <i style="color:gray;font-size: 24px;padding-left: 5px;padding-right: 5px;" class="fa fa-smile-o" aria-hidden="true"></i>
+    <input class="inptext" type="text" name="" placeholder="Type a message" >
+    <i  style="color:gray;font-size: 27px;padding-left: 20px;" class="fa fa-microphone" aria-hidden="true"></i>
+    </div>
+    </div>
+    <div class="chat-rishab">
+    <div class="chat-baba-top">
+    <div style="display: inline-block;" class="chat-img">
+    <img src="DSC_0187.jpg" class="img-circle contacti" alt="Image">
+    <h4 style="display: inline-block;padding-top: 0;padding-left: 3px;">Rishabh</h4>
+    </div>
+    <div  style="display: inline-block; padding-top: 15px;" class="right-items pull-right">
+     <i  style="color: gray;font-size: 24px;padding-right: 20px; cursor: pointer;"  class="fa fa-search tl" aria-hidden="true"></i>
+     <i style="color: gray;font-size: 24px;padding-right: 20px; cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i>
+     <div class="dropdown" style="display:inline-block;">
+     <i class="fa fa-ellipsis-v dropdown-toggle" data-toggle="dropdown"  style="color: gray;font-size: 24px;cursor: pointer;padding-right: 20px;"></i>
+ <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact info</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Select Messages</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mute</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Clear Messages</a></li>   
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete chat</a></li>   
+    </ul>
+</div>
+    </div>
+    <div class="clearfix">
+    </div>
+    </div>
+    <div class="chatb">
+    <div class="chatlogs">
+   <div class="chatm self">
+   <p class="chat-message">Hi rishabh<br><time style="color: gray;float: right">10.00</time></p>
+   </div>
+   <br>
+   <div class="chatm friend">
+   <p class="chat-message">Hi nishant<br><time style="color: gray;float: right">10.00</time></p>
+   </div>
+   <br>
+   <div class="chatm self">
+   <p class="chat-message">how r u<br><time style="color: gray;float: right">10.00</time></p>
+   </div>
+   <br>
+   <div class="chatm friend">
+   <p class="chat-message">thk hain, tm sunao..?<br><time style="color: gray;float: right">10.00</time></p>
+   </div>
+   <br>
+   <div class="chatm self">
+   <p class="chat-message">Hm v thk hain<br><time style="color: gray;float: right">10.00</time></p>
+   </div>
+   <br>
+   <div class="chatm friend">
+   <p class="chat-message">Aur kya ho rha h<br><time style="color: gray;float: right">10.00</time></p>
+   </div>
+   <br>
+   <div class="chatm self">
+   <p class="chat-message">Just chiling...tm kya kr rhe??<br><time style="color: gray;float: right">10.00</time></p>
+   </div>
+   <br>
+   <div class="chatm friend">
+   <p class="chat-message">Kch v nai..baithe hun<br><time style="color: gray;float: right">10.00</time></p>
+   </div>
+   <br>
+   <div class="chatm self">
+   <p class="chat-message">Aur btao kch naya<br><time style="color: gray;float: right">10.00</time></p>
+   </div>
+   <br>
+   <div class="chatm friend">
+   <p class="chat-message">Sb wai kch naya nai<br><time style="color: gray;float: right">10.00</time></p>
+   </div>
+   <br>
+   <div class="chatm self">
+   <p class="chat-message">haha..same here<br><time style="color: gray;float: right">10.00</time></p>
+   </div>
+   <br>
+   <div class="chatm friend">
+   <p class="chat-message">haha..same here<br><time style="color: gray;float: right">10.00</time></p>
+   </div>
+   <br>
+   <div class="chatm self">
+   <p class="chat-message">I cannot even imagine where I would be today were it not for that handful of friends who have given me a heart full of joy. Let's face it, friends make life a lot more fun<br><time style="color: gray;float: right">10.00</time></p>
+   </div>
+   <br>
+
+    </div>
+    </div>
+    <div class="chattext">
+    <i style="color:gray;font-size: 24px;padding-left: 5px;padding-right: 5px;" class="fa fa-smile-o" aria-hidden="true"></i>
+    <input class="inptext" type="text" name="" placeholder="Type a message">
+    <i  style="color:gray;font-size: 27px;padding-left: 20px;" class="fa fa-microphone" aria-hidden="true"></i>
+    </div>
+  </div>
+    </div>
+    <div class="extreme_right">
+    
+    <div class="extreme_right_top">
+    <i style="display: inline-block;color: gray;font-size: 30px" class="fa fa-times" aria-hidden="true"></i>
+    <h3 style="display: inline-block;">Search Messages</h3>
+    </div>
+    <div class="search-bar">
+  
+       <div class="searchbox">
+      <i class="fa fa-search" aria-hidden="true"></i> 
+      <p> Search message</p>
+      
+       </div>
+       <div class="inp" style="display: none;">
+       <i class="fa fa-arrow-left" aria-hidden="true"></i>
+       <input type="text" name="">
+       </div> 
+  </div>
+    </div>
+    <div class="extreme_right2">
+    
+        <div class="extreme_right_top">
+             <i style="display: inline-block;color: gray;font-size: 30px" class="fa fa-times" aria-hidden="true"></i>
+                  <h3 style="display: inline-block;">Contact Info</h3>
+        </div>
+        <div class="extreme_right_down">
+        <div class="contact_info">
+         <img id="imgr" class="img-cicle contactif" alt="Image">
+         </div>
+        <div class="contact_name" style=" padding-left: 30px;padding-bottom: 50px;">
+        <h3>Baba</h3>
+        </div>
+        <div class="space">
+        </div>
+       <div class="medialinks">
+              <div class="media_heading" style="padding: 10px; cursor: pointer;">
+             <h4 style="color:#00BFFF;display: inline-block;" class="pull-left"> 
+             Media,Links and Docs</h4>
+               <i style="color:gray;display: inline-block;padding-top: 10px;" class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+            </div>
+            <div class="clearfix">
+            </div>
+       </div>
+       <div class="media_wrapper">
+               <div class="media1">
+                 <img src="ab.jpg" alt="ab">
+                </div>
+               <div class="media2">
+                 <img src="ab.jpg" alt="ab" >
+               </div>
+                <div class="media3">
+                  <img src="ab.jpg" alt="ab">
+                 </div>
+        </div>
+       <div class="space">
+        </div>
+        <div class="mns">
+        <div class = "mute_option" style="cursor:pointer;">
+        <h4 style="display: inline-block;">Mute</h4>
+        <i style="color:gray;font-size: 30px;display: inline-block;padding-top: 10px;padding-right: 3px;" class="fa fa-square-o pull-right" aria-hidden="true"></i>
+        <div class="clearfix">
+            </div>
+        </div>
+        <hr>
+        <div>
+        <h4 style="display: inline-block;">Starred Messages</h4>
+        <i style="display: inline-block;padding-top: 10px;padding-right: 3px;" class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+        <div class="clearfix">
+            </div>
+        </div>
+        </div>
+        <div class="clearfix">
+        </div>
+        <div class="space">
+        </div>
+        <div class="about_contact">
+          <h4 style="color:#00BFFF; padding-bottom: 15px">About and phone number</h4>
+          <h4>Hey there! I am using WhatsApp</h4>
+          <hr>
+          <h4>9334076577</h4>
+        </div>
+        <div class="space">
+        </div>
+        <div class="block_contact">
+          <h4><span style="padding-right: 15px;"><i style="color:gray" class="fa fa-ban" aria-hidden="true"></i></span>Block Contact</h4>
+        </div>
+        <div class="space">
+        </div>
+          <div class="delete_contact">
+           <h4 style="color: red;"><span style="padding-right: 15px;"><i class="fa fa-trash-o" aria-hidden="true"></span></i>Delete chat</h4>
+           </div>
+          <div class="space">
+          </div>
+       </div>
+     
+       </div>
+       <div class="gallery_tab">
+       <div class="gallery_tab_top">
+          <div class="back">
+          <i style="padding: 15px;font-size: 27px;color: white;" class="fa fa-arrow-left" aria-hidden="true"></i>
+          </div>
+          <ul class="nav nav-tabs">
+         <li class="active"><a data-toggle="tab" href="#home">Media</a></li>
+         <li><a data-toggle="tab" href="#menu1">Docs</a></li>
+         <li><a data-toggle="tab" href="#menu2">Links</a></li>
+         </ul>
+</div>    
+      <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                  bjjbgjbjjgjbj
+                  </div>
+                <div id="menu1" class="tab-pane fade">
+                jbgjhgjog
+                                </div>
+              <div id="menu2" class="tab-pane fade">
+             jogjgjb
+         
+              </div>
+            </div>
+          </div>
+<div class="mymodal">
+<img  class="prodp" alt="prodp" width="100%">
+</div>
+
+
+  
+  <div class="modal fade" id="myModal" role="dialog" data-modal="mute_optn">
+    <div class="modal-dialog">
+    
+      
+      <div class="modal-content">
+        
+
+        <div class="modal-body" style="padding:40px 50px;">
+          <h4> Mute "Baba" for..</h4>
+          <form>
+  <input type="radio" name="gender" value="male" checked> 8 Days<br>
+  <input type="radio" name="gender" value="female"> 1 Week<br>
+  <input type="radio" name="gender" value="other"> 1 Year 
+</form>
+        </div>
+         <div class="modal-footer">
+         <button style="margin:10px;" type="submit" class="btn btn-success btn-default pull-right" data-dismiss="modal">Mute</button>
+          <button style="margin:10px;" type="submit" class="btn btn-default pull-right" data-dismiss="modal">Cancel</button>
+
+          
+       </div>
+
+      </div>
+      
+    </div>
+  </div> 
+</div>     
+       
+  <!--       <div class="modal fade" id="myModal" role="dialog" data-modal="mute_optn">
+    <div class="modal-dialog ">
+    
+      <div class="modal-content">
+        
+
+        <div class="modal-body pic-modal" style="padding:40px 50px;">
+          <img  class="prodp" alt="prodp" width="100%">
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div> --> 
+<!-- <div class="dropdown" style="display:inline-block;">
+    <i  class="fa fa-ellipsis-v dropdown-toggle" data-toggle="dropdown" style="font-size:24px;cursor: pointer;color:gray"></i>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-picture-o upload" style="font-size: 32px" aria-hidden="true"></i></a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-camera upload"  style="font-size:32px" aria-hidden="true"></i></a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-file upload" style="font-size:32px" aria-hidden="true"></i></a></li> 
+   <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-address-book upload"  style="font-size: 32px" aria-hidden="true"></i></a></li>   
+       
+    </ul>
+    </div> -->
+
+
+
+
+
+      
+
+
+
+    
+   
+   <!-- 
+     <div class="attach" style="display: none;">
+    <ul>
+    <li><i class="fa fa-picture-o upload" style="font-size: 32px" aria-hidden="true"></i></li>
+    <input id="file_upload" type="file" style="display: none;">
+    <li><i class="fa fa-camera upload"  style="font-size:32px" aria-hidden="true"></i></li>
+    <li><i class="fa fa-file upload" style="font-size:32px" aria-hidden="true"></i></li>
+    <li><i class="fa fa-address-book upload"  style="font-size: 32px" aria-hidden="true"></i></li>
+</ul>
+     </div> -->
+       
+</body>
+</html>
